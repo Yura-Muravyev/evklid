@@ -1,0 +1,67 @@
+:root {
+    --default: #FF9900;
+    --hover-focus: #FFB84D;
+    --active: #E1670E;
+    --bg-body:#E5E5E5;
+    --gap_1920: 65px;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+body {
+    background-color: #CACACA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+*:focus-visible {
+    outline: none;
+}
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+p {
+    margin: 0;
+    padding: 0;
+}
+  
+img {
+    max-width: 100%;
+}
+  
+input,
+select {
+    border: none;
+}
+
+/* global */
+.list-rest {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    min-width: 320px;
+    padding: 0 var(--gap_1920);
+}
+
+
+
