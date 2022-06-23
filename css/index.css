@@ -3,7 +3,7 @@
     --hover-focus: #FFB84D;
     --active: #E1670E;
     --bg-body:#E5E5E5;
-    --gap_1920: 65px;
+    --gap_1920: 75px;
 }
 
 html {
@@ -60,8 +60,80 @@ select {
 
 .container {
     min-width: 320px;
-    padding: 0 var(--gap_1920);
+    margin: 0 var(--gap_1920);
+    padding: 0;
+}
+
+/* ================================== HEADER ========================================== */
+
+.header {
+    height: 100px;
+    background-color: #FFF;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 14px 0;
+}
+.header-logo {
+    margin-right: 553px;
+}
+
+.header-nav {
+    width: 708px;
+    margin-right: 260px;
+    padding-bottom: 12px;
+}
+.header-nav__list {
+    display: flex;
+    justify-content:space-between;
+}
+
+.header-nav__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.header-nav__item:focus {
+    outline: 2px solid var(--hover-focus);
+}
+
+.header-nav__item:hover {
+    border-color: var(--hover-focus);
+}
+
+.header-nav__item:active {
+    border-color: var(--active);
+    color: var(--active);
+}
+
+.header-search__icon {
+    cursor: pointer;
+}
+
+.header-search__icon:hover rect{
+    transition: fill .5s ease-in-out;
+    fill: var(--hover-focus);
+}
+
+.header-search__icon:hover path {
+    transition: stroke .5s ease-in-out;
+    stroke: var(--hover-focus);
+}
+
+.header-search__icon:focus {
+    outline: 2px solid var(--hover-focus);
 }
 
 
-
+/* ================================== HEADER ========================================== */
