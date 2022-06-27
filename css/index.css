@@ -1,9 +1,14 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
 :root {
+    --color-white:#fff;
+    --bg-color:#E5E5E5;
     --default: #FF9900;
     --hover-focus: #FFB84D;
-    --active: #E1670E;
+    --active: #E1670E; 
     --bg-body:#E5E5E5;
-    --gap_1920: 75px;
+    --gap_1920: 65px;
 }
 
 html {
@@ -11,11 +16,11 @@ html {
   }
   
 body {
-    background-color: #CACACA;
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    /* font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 32px; */
 }
   
 *,
@@ -33,7 +38,7 @@ a {
     text-decoration: none;
 }
   
-p {
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -60,14 +65,32 @@ select {
 
 .container {
     min-width: 320px;
-    margin: 0 var(--gap_1920);
-    padding: 0;
+    padding: 0 var(--gap_1920)
+
 }
+
+/* ================================== GLOBAL ========================================== */
+
+.btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-white);
+    background-color: var(--default);
+    border: 1px solid var(--main-lnk-color);
+    border-radius: 16px;
+    padding: 20px 38px;
+    cursor: pointer;
+}
+
 
 /* ================================== HEADER ========================================== */
 
 .header {
-    height: 100px;
+    min-height: 100px;
+    margin-bottom: 50px;
     background-color: #FFF;
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 32px 32px;
@@ -77,7 +100,7 @@ select {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 14px 0;
+    padding-top: 14px;
 }
 .header-logo {
     margin-right: 553px;
@@ -86,7 +109,6 @@ select {
 .header-nav {
     width: 708px;
     margin-right: 260px;
-    padding-bottom: 12px;
 }
 .header-nav__list {
     display: flex;
@@ -136,4 +158,57 @@ select {
 }
 
 
-/* ================================== HEADER ========================================== */
+/* ================================== HERO ========================================== */
+
+.hero {
+    min-height: 620px;
+    width: 1770px;
+    margin: 0 auto;
+    background-color: greenyellow;
+}
+
+.hero-bg {
+
+}
+
+.hero-bg__img {
+    border-radius: 32px;
+}
+
+.hero-content {
+    max-width: 837px;
+    padding-top: 100px;
+    padding-left: 15px;
+}
+
+.hero-content__titel {
+    margin-bottom: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    color: var(--color-white);
+}
+
+.hero-content__descr {
+    margin-bottom: 90px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--color-white);
+}
+
+.hero-content__btn {
+    padding: 25px 39px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.hero-content__pagination {
+
+}
