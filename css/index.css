@@ -48,7 +48,7 @@ select {
 }
 
 /* global */
-.list-rest {
+.list-reset {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -293,7 +293,7 @@ select {
 
 .about-content-small-card {
     display: flex;
-    padding: 65px 120px 65px 60px;
+    padding: 65px 80px 65px 60px;
     width: 870px;
     height: 295px;
     margin-bottom: 32px;
@@ -307,19 +307,6 @@ select {
     margin-right: 50px;
 }
 
-.icon-cube {
-
-}
-
-.icon-gear {
-
-}
-
-
-.bout-content-small-card__details {
-
-}
-
 .about-content-small-card_descr-title {
     margin-bottom: 8px;
     font-family: 'Montserrat';
@@ -330,15 +317,11 @@ select {
     color: #000000;
 }
 
-.about-content-small-card_descr-wrapper {
+.about-content-small-card__descr {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     color: #000000;
-}
-
-.about-content-small-card__descr {
-
 }
