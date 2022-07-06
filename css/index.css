@@ -215,6 +215,10 @@ select {
 
 /* ================================== ABOUT ========================================== */
 
+.about {
+    margin-bottom: 100px;
+}
+
 .about-header {
     max-width: 1235px;
     margin-bottom: 50px;
@@ -302,6 +306,10 @@ select {
     background-color: var(--color-white);
 }
 
+.about-content-small-card:last-child {
+    margin-bottom: 0;
+}
+
 .about-content-small-card__icon-wrapper {
     min-width: 190px;
     margin-right: 50px;
@@ -318,6 +326,73 @@ select {
 }
 
 .about-content-small-card__descr {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.how {
+
+}
+
+.how_title {
+    margin-bottom: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+}
+
+.slider-how {
+
+}
+
+.how__step-wrapper {
+
+}
+
+.how__step-list {
+    display: flex;
+    margin-bottom: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.how__step-item:not(:last-child) {
+    margin-right: 85px;
+}
+
+.how-details {
+
+}
+
+.how-details___title {
+    margin-bottom: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.how-details__descr-wrapper {
+    display: flex;
+
+}
+
+.how-details__desr {
+    max-width: 758px;
+    margin-right: 142px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
