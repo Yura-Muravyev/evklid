@@ -60,7 +60,7 @@ select {
 
 .container {
     min-width: 320px;
-    padding: 0 var(--gap_1920)
+    margin: 0 var(--gap_1920)
 
 }
 
@@ -334,8 +334,10 @@ select {
     color: #000000;
 }
 
-.how {
+/* ================================== ABOUT ========================================== */
 
+.how {
+    margin-bottom: 110px;
 }
 
 .how_title {
@@ -346,14 +348,6 @@ select {
     font-size: 48px;
     line-height: 59px;
     color: #000000;
-}
-
-.slider-how {
-
-}
-
-.how__step-wrapper {
-
 }
 
 .how__step-list {
@@ -372,7 +366,7 @@ select {
 }
 
 .how-details {
-
+    display: flex;
 }
 
 .how-details___title {
@@ -385,18 +379,52 @@ select {
     color: #000000;
 }
 
-.how-details__descr-wrapper {
-    display: flex;
 
-}
-
-.how-details__desr {
+.how-detalis-wrapper {
     max-width: 758px;
     margin-right: 142px;
+    
+}
+.how-details__desr {
+    margin-bottom: 50px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
+    color: #000000;
+}
+
+.how-details__img {
+    width: 870px;
+    height: 460px;
+    
+}
+
+.btn-more {
+    margin-right: 30px;
+}
+
+.btn-contract {
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+/* ================================== ABOUT ========================================== */
+
+.faq__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
     color: #000000;
 }
