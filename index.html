@@ -218,8 +218,8 @@
         </section>
 
         <footer class="footer">
-            <div class="container">
-                <div class="footet-left">
+            <div class="container footer-container">
+                <div class="footer-left">
                     <img class="footer__logo" src="./img/Logo_footer.svg" alt="">
                     <ul class="footer-nav list-reset">
                         <li class="footer-nav__item"> <a href="#">О нас</a> </li>
@@ -245,22 +245,21 @@
                     <form class="feedback-form" action="#">
                         <h3 class="feedback-form__title">Оставить заявку</h3>
 
-                        <input class="feedback-form__name" type="text">
-                        <input class="feedback-form__mail" type="email">
-                        <input class="feedback-form__msg" type="text">
+                        <input class="feedback-form__name" type="text" placeholder="Фамилия, имя и отчество*">
+                        <input class="feedback-form__mail" type="email" placeholder="Email*">
+                        <textarea class="feedback-form__msg" id="feedback-form__msg" cols="30" rows="10"placeholder="Сообщение"></textarea>
 
 
                         <div class="feedback-form__btn-group">
                             <button class="feedback-form__btn btn" type="submit">Отправить данные</button>
-                            <label for="feedback-form__approval">12123213</label>
                             <input class="feedback-form__approval" type="checkbox" name="approval" id="feedback-form__approval">
+                            <label class="feedback-form__approval-label" for="feedback-form__approval">Согласен на обработку данных</label>
                         </div>
-
                     </form>
                 </div>
     
                 <div class="footer-right">
-                    <p>
+                    <p class="footer-right__descr">
                         Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация 
                         с широким активом обеспечивает широкому кругу (специалистов) участие 
                         в формировании стандартных подходов.
