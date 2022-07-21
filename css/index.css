@@ -118,11 +118,7 @@ select {
     line-height: 22px;
     color: #000000;
     border-bottom: 2px solid transparent;
-    transition: border-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-.header-nav__item:focus {
-    outline: 2px solid var(--hover-focus);
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .header-nav__item:hover {
@@ -134,21 +130,26 @@ select {
     color: var(--active);
 }
 
+.header-nav__item a:focus {
+    outline: 2px solid var(--hover-focus);
+}
+
+
 .header-search__icon {
     cursor: pointer;
 }
 
 .header-search__icon:hover rect{
-    transition: fill .5s ease-in-out;
+    transition: fill .3s ease-in-out;
     fill: var(--hover-focus);
 }
 
 .header-search__icon:hover path {
-    transition: stroke .5s ease-in-out;
+    transition: stroke .3s ease-in-out;
     stroke: var(--hover-focus);
 }
 
-.header-search__icon:focus {
+.header-search:focus {
     outline: 2px solid var(--hover-focus);
 }
 
@@ -161,11 +162,11 @@ select {
     
 }
 
-.hero__bg-wrapper {
+.hero__slider-wrapper {
     position: relative;
 }
 
-.hero__bg-img{
+.hero__slider-img{
     z-index: -1;
     position: absolute;
     left: 0;
@@ -179,6 +180,9 @@ select {
     padding-top: 100px;
     padding-left: 80px;
     padding-right: 853px;
+    background-image: url(../img/hero_img.png);
+    background-repeat: repeat;
+    background-size: 100%;
 }
 
 .hero-content__titel {
@@ -577,7 +581,7 @@ select {
 
 .feedback-form__msg {
     margin-bottom: 32px;
-    background-color: transparent;
+    background: #414141;
 }
 .feedback-form__approval-label {
     font-family: 'Montserrat';
@@ -586,4 +590,23 @@ select {
     font-size: 16px;
     line-height: 32px;
     color: #CACACA;
+}
+
+.feedback-form__approval {
+    appearance: none;
+    position: absolute;
+}
+
+.check-box {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #CACACA;
+    border-radius: 2px;
+}
+
+.feedback-form__approval:checked +  .check-box{
+    background-image: url(../img/checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
