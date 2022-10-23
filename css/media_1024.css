@@ -1,4 +1,9 @@
 @media (max-width: 1025px) {
+  /* ================================== HEADER ========================================== */
+  .header {
+    margin-bottom: 40px;
+  }
+
   .header.open .nav{
     transform: translateX(100%);
   }
@@ -68,4 +73,120 @@
     width: 150px;
   }
 
+/* ================================== HEADER ========================================== */
+
+
+/* ================================== HERO ========================================== */
+  .hero__bg {
+    margin-bottom: 40px;
+    padding: 160px 0 100px 77px;
+    background-image: url(../img/img_1024/hero_1024.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px;
+  }
+
+  .hero__inner {
+    max-width: 770px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .hero__descr {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__btn {
+    margin-bottom: 58px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+  }
+/* ================================== HERO ========================================== */
+
+
+/* ================================== ABOUT ========================================== */
+
+  .about-content {
+    margin-bottom: 80px;
+  }
+
+  .about__descr {
+    margin-bottom: 60px;
+  }
+
+  .about-content__cards {
+    width: 100%;
+  }
+
+  .about-content__cards:not(:nth-child(2n)) {
+    margin: 0;
+  }
+
+  .big-card {
+    min-height: 640px;
+    background-image: url(../img/img_1024/about_1024.png);
+  }
+
+  .small-card {
+    padding-left: 75px;
+  }
+
+/* ================================== ABOUT ========================================== */
+
+
+/* ================================== HOW ========================================== */
+.how__container {
+  margin-bottom: 80px;
+}
+.how__step-list {
+  margin-bottom: 50px;
+}
+
+.how-content * {
+  width: 49%;
+}
+
+.how-content::before {
+  width: 47%;
+  top: 10px;
+  background-image: url(../img/img_1024/how_1024.jpg);
+}
+
+.how-content__descr {
+  margin-bottom: 24px;
+}
+/* ================================== HOW ========================================== */
+
+
+/* ================================== FAQ ========================================== */
+  .faq-btn {
+    padding: 30px 0;
+
+  }
+  .faq-btn__title {
+    max-width: 756px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+
+/* ================================== FAQ ========================================== */
+  /* FOOTER */
+  .footer__descr {
+    display: none;
+  }
+
+  .about-content {
+    flex-wrap: wrap;
+  }
+  /* FOOTER */
 }
