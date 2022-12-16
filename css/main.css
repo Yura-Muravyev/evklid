@@ -113,6 +113,11 @@ textarea {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 20px 38px;
+  border-radius: 16px;
+}
+
 /* HEADER */
 
 .header {
@@ -142,9 +147,6 @@ textarea {
   margin-right: 85px;
 }
 
-.nav-item:not(:last-child) {
-}
-
 .nav-link {
   font-style: normal;
   font-weight: 600;
@@ -160,9 +162,8 @@ textarea {
 
 .container-hero {
   position: relative;
-  height: 300px;
   overflow: hidden;
-  background-color: aquamarine;
+  border-radius: 32px;
 }
 
 .swiper {
@@ -171,5 +172,78 @@ textarea {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: red;
+}
+
+.swiper-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: var(--light-grey);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+  left: 10px;
+  margin-bottom: 25px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet:not(:last-child) {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.hero-content {
+  position: relative;
+  top: 0;
+  max-width: 895px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-title {
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  color: var(--white);
+}
+
+.hero-descr {
+  margin-bottom: 90px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--white);
+}
+
+.hero-btn {
+  padding: 24px 38px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--white);
+  background: var(--orange);
+  border-radius: 16px;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.footer {
+  margin-bottom: 500px;
 }
