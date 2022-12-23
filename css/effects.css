@@ -1,0 +1,22 @@
+@media (min-width: 1200px) {
+  /* HEADER */
+  .nav__item:hover {
+    color: var(--dark-orange);
+  }
+
+  .nav__item:hover::before {
+    width: 100%;
+  }
+
+  .loupe:hover path {
+    stroke: var(--dark-orange);
+  }
+  .loupe:hover rect {
+    fill: var(--dark-orange);
+  }
+
+  /* HERO */
+  .hero-btn:hover {
+    background-color: var(--dark-orange);
+  }
+}

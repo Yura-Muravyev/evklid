@@ -12,9 +12,3 @@ const swiper = new Swiper(".swiper", {
     paginationBulletMessage: "Слайд {{index}}",
   },
 });
-
-let gg = document.getElementsByClassName("hero-btn");
-
-gg.btn.addEventListener("click", () => {
-  console.log("object");
-});

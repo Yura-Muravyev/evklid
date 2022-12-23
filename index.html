@@ -22,14 +22,14 @@
 <body>
     <header class="header">
         <div class="container header-container flex">
-            <img class="logo logo-header" src="./img/img_1920/logo_1920.svg" alt="Логотип">
+            <img class="logo header__logo" src="./img/img_1920/logo_1920.svg" alt="Логотип">
             <nav class="nav">
-                <ul class="nav-list list-reset flex">
-                    <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Этапы</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Отзывы</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                <ul class="nav__list list-reset flex">
+                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Этапы</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
             <svg class="loupe" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -40,6 +40,28 @@
                     d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
                     stroke="black" stroke-width="2" />
             </svg>
+            <div class="searh flex display-none">
+                <input class="searh__input" type="text" placeholder="Что будем искать?">
+                <div class="searh__icons">
+                    <svg class="searh__loupe" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="7.56126" height="1.89031"
+                            transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black" />
+                        <path
+                            d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                            stroke="black" stroke-width="2" />
+                    </svg>
+                    <svg class="closed__search" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8.95386" y="7.30444" width="11.6645" height="2.33291"
+                            transform="rotate(45 8.95386 7.30444)" fill="#CACACA" />
+                        <rect x="7.3042" y="15.5525" width="11.6645" height="2.33291"
+                            transform="rotate(-45 7.3042 15.5525)" fill="#CACACA" />
+                        <circle cx="12" cy="12" r="11" stroke="#CACACA" stroke-width="2" />
+                    </svg>
+
+                </div>
+            </div>
 
         </div>
     </header>
