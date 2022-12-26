@@ -1,6 +1,26 @@
 @media (min-width: 1200px) {
   /* HEADER */
-  .nav__item:hover {
+  .nav__item {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .nav__item::before {
+    transition-property: width, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .nav__link {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition-property: outline-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .nav__item:active {
     color: var(--dark-orange);
   }
 
@@ -8,11 +28,86 @@
     width: 100%;
   }
 
-  .loupe:hover path {
+  .nav__item:active::before {
+    background-color: var(--dark-orange);
+  }
+
+  .nav__link:focus-visible {
+    outline-color: var(--orange);
+  }
+
+  /* Иконка поиска */
+  .btn-loupe {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition-property: outline-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-loupe__icon path {
+    transition-property: stroke;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-loupe__icon rect {
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-loupe__icon:hover path {
+    stroke: var(--orange);
+  }
+
+  .btn-loupe__icon:hover rect {
+    fill: var(--orange);
+  }
+
+  .btn-loupe__icon:active path {
     stroke: var(--dark-orange);
   }
-  .loupe:hover rect {
+
+  .btn-loupe__icon:active rect {
     fill: var(--dark-orange);
+  }
+
+  .btn-loupe:focus-visible {
+    outline-color: var(--orange);
+  }
+
+  /* СТРОКА ПОИСКА */
+
+  /* Лупа */
+
+  /* Крестик */
+  .closed__search rect {
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .closed__search circle {
+    transition-property: stroke;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .closed__search:hover rect {
+    fill: var(--orange);
+  }
+
+  .closed__search:hover circle {
+    stroke: var(--orange);
+  }
+
+  .closed__search:active rect {
+    fill: var(--dark);
+  }
+
+  .closed__search:active circle {
+    stroke: var(--dark);
   }
 
   /* HERO */

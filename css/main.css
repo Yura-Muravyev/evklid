@@ -66,6 +66,10 @@
   outline: none;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 html {
   box-sizing: border-box;
   background-color: var(--bg-body);
@@ -103,8 +107,8 @@ textarea {
   list-style: none;
 }
 
-.display-none {
-  display: none;
+.btn-reset {
+  background-color: transparent;
 }
 
 .flex {
@@ -151,9 +155,6 @@ textarea {
 .nav__item {
   position: relative;
   margin-right: 85px;
-  transition-property: color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
 }
 
 .nav__item::before {
@@ -164,8 +165,8 @@ textarea {
   height: 2px;
   width: 0;
   transform: translate(-50%);
-  background-color: var(--dark-orange);
-  transition-property: width;
+  background-color: var(--orange);
+  transition-property: width, background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
@@ -177,29 +178,12 @@ textarea {
   line-height: 22px;
 }
 
-.loupe {
-  cursor: pointer;
-}
-
-.loupe path {
-  transition-property: stroke;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-
-.loupe rect {
-  transition-property: fill;
-  transition-delay: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-
 .searh {
-  display: block;
   justify-content: space-between;
   position: absolute;
   content: "";
-  top: 10%;
-  left: 70%;
+  top: 20px;
+  right: -100%;
   width: 539px;
   height: 60px;
   padding-top: 18px;
@@ -209,7 +193,14 @@ textarea {
   background-color: var(--white);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
   border-radius: 24px;
-  /* display: none; */
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.header.searh--open .searh {
+  right: 0;
+  /* transform: translateX(200%); */
 }
 
 .searh__input {
@@ -219,6 +210,11 @@ textarea {
 
 .searh__loupe {
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.closed__search {
+  cursor: pointer;
 }
 
 /* hero */
