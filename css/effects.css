@@ -81,6 +81,34 @@
 
   /* Лупа */
 
+  .searh__loupe path {
+    transition-property: stroke;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .searh__loupe rect {
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .searh__loupe:hover path {
+    stroke: var(--orange);
+  }
+
+  .searh__loupe:hover rect {
+    fill: var(--orange);
+  }
+
+  .searh__loupe:active path {
+    stroke: var(--dark-orange);
+  }
+
+  .searh__loupe:active rect {
+    fill: var(--dark-orange);
+  }
+
   /* Крестик */
   .closed__search rect {
     transition-property: fill;
@@ -111,7 +139,21 @@
   }
 
   /* HERO */
-  .hero-btn:hover {
+  .hero__btn {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .hero__btn:hover {
+    background-color: var(--light-orange);
+  }
+
+  .hero__btn:focus-visible {
+    background-color: var(--light-orange);
+  }
+
+  .hero__btn:active {
     background-color: var(--dark-orange);
   }
 }

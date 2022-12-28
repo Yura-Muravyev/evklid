@@ -115,6 +115,10 @@ textarea {
   display: flex;
 }
 
+.display-none {
+  display: none;
+}
+
 .container {
   max-width: 1770px;
   min-width: 320px;
@@ -140,12 +144,47 @@ textarea {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  min-height: 100px;
   padding: calc((100px - 72px) / 2) 0;
+}
+
+.header__burger-btn {
+  display: none;
+  position: relative;
+  height: 23px;
+  width: 30px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger-btn__line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark);
+  transition-property: transform, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.burger-btn__line:nth-child(1) {
+  transform: translateY(10px);
+}
+
+.burger-btn__line:nth-child(3) {
+  transform: translateY(-10px);
 }
 
 .header__logo {
   margin-right: 368px;
   cursor: pointer;
+}
+
+.nav {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .nav__list {
@@ -169,6 +208,10 @@ textarea {
   transition-property: width, background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+}
+
+.btn-loupe {
+  cursor: pointer;
 }
 
 .nav__link {
@@ -262,7 +305,7 @@ textarea {
   margin-right: 20px;
 }
 
-.hero-content {
+.hero__content {
   position: relative;
   top: 0;
   max-width: 895px;
@@ -273,7 +316,7 @@ textarea {
   pointer-events: none;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 24px;
   font-weight: 800;
   font-size: 70px;
@@ -281,7 +324,7 @@ textarea {
   color: var(--white);
 }
 
-.hero-descr {
+.hero__descr {
   margin-bottom: 90px;
   font-weight: 700;
   font-size: 24px;
@@ -289,7 +332,7 @@ textarea {
   color: var(--white);
 }
 
-.hero-btn {
+.hero__btn {
   padding: 24px 38px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -297,7 +340,7 @@ textarea {
   line-height: 28px;
   text-align: center;
   color: var(--white);
-  background: var(--orange);
+  background-color: var(--orange);
   border-radius: 16px;
   pointer-events: all;
   cursor: pointer;
