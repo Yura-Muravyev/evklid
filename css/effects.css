@@ -77,6 +77,11 @@
     outline-color: var(--orange);
   }
 
+  .header__burger-btn {
+  }
+  .burger-btn__line {
+  }
+
   /* СТРОКА ПОИСКА */
 
   /* Лупа */

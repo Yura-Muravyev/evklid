@@ -1,12 +1,13 @@
-@media (max-width: 321px) {
+@media (max-width: 500px) {
   .container {
     min-width: 290px;
-    margin: 0 50px;
+    margin: 0 var(--gap_320);
   }
 
   /* HEADER */
   .header {
     width: 320px;
+    margin-bottom: 30px;
   }
 
   .header-container {
@@ -21,7 +22,7 @@
 
   .header__logo {
     margin: 0;
-    width: 150px;
+    width: 110px;
   }
 
   .btn-loupe {
@@ -62,5 +63,55 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+  }
+
+  /* HERO */
+
+  .swiper-img {
+    border-radius: 16px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 5px;
+    left: 10px;
+    margin-bottom: 25px;
+  }
+
+  .hero__content {
+    padding-top: 60px;
+    padding-left: 21px;
+    padding-right: 21px;
+    align-items: center;
+  }
+
+  .hero__title {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .hero__descr {
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .hero__btn {
+    margin: 0;
+    margin-left: 44px;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
   }
 }

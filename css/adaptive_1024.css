@@ -2,10 +2,14 @@
   .container {
     max-width: 924px;
     min-width: 320px;
-    margin: 0 50px;
+    margin: 0 var(--gap_1024);
   }
 
   /* HEADER */
+
+  .header {
+    margin-bottom: 40px;
+  }
 
   .header-container {
     min-height: 100px;
@@ -68,5 +72,35 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+  }
+
+  /* HERO */
+
+  .hero__content {
+    padding-top: 160px;
+    padding-left: 77px;
+  }
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .hero__descr {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__btn {
+    margin-bottom: 115px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0;
+    left: 10px;
+    margin-bottom: 59px;
   }
 }
