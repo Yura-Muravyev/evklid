@@ -47,28 +47,6 @@
                         stroke="black" stroke-width="2" />
                 </svg>
             </button>
-            <!-- <div class="searh flex">
-                <input class="searh__input" type="text" placeholder="Что будем искать?">
-                <div class="searh__icons">
-                    <svg class="searh__loupe" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect width="7.56126" height="1.89031"
-                            transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black" />
-                        <path
-                            d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-                            stroke="black" stroke-width="2" />
-                    </svg>
-                    <svg class="closed__search" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8.95386" y="7.30444" width="11.6645" height="2.33291"
-                            transform="rotate(45 8.95386 7.30444)" fill="#CACACA" />
-                        <rect x="7.3042" y="15.5525" width="11.6645" height="2.33291"
-                            transform="rotate(-45 7.3042 15.5525)" fill="#CACACA" />
-                        <circle cx="12" cy="12" r="11" stroke="#CACACA" stroke-width="2" />
-                    </svg>
-                </div>
-            </div> -->
-
         </div>
     </header>
     <main class="main">
@@ -82,7 +60,8 @@
                                 <source srcset="./img/img_768/hero_768_1.jpg" media="(max-width: 769px)">
                                 <source srcset="./img/img_1024/hero_1024_1.png" media="(max-width: 1025px)">
                                 <source srcset="./img/img_1920/hero_1920_1.jpg" media="(max-width: 1920px)">
-                                <img class="swiper-img" src="" alt="Слайд 1">
+                                <source srcset="./img/img_1920/hero_1920_1.jpg" media="(max-width: 3840px)">
+                                <img class="swiper-img" src="./img/img_1920/hero_1920_1" alt="Слайд 1">
                             </picture>
                         </div>
                         <div class="swiper-slide">
@@ -91,7 +70,8 @@
                                 <source srcset="./img/img_768/hero_768_2.jpg" media="(max-width: 769px)">
                                 <source srcset="./img/img_1024/hero_1024_2.png" media="(max-width: 1025px)">
                                 <source srcset="./img/img_1920/hero_1920_2.jpg" media="(max-width: 1920px)">
-                                <img class="swiper-img" src="." alt="Слайд 2">
+                                <source srcset="./img/img_1920/hero_1920_2.jpg" media="(max-width: 3840px)">
+                                <img class="swiper-img" src="./img/img_1920/hero_1920_2.jpg" alt="Слайд 2">
                             </picture>
 
                         </div>
@@ -101,7 +81,8 @@
                                 <source srcset="./img/img_768/hero_768_3.jpg" media="(max-width: 769px)">
                                 <source srcset="./img/img_1024/hero_1024_3.png" media="(max-width: 1025px)">
                                 <source srcset="./img/img_1920/hero_1920_3.jpg" media="(max-width: 1920px)">
-                                <img class="swiper-img" src="" alt="Слайд 3">
+                                <source srcset="./img/img_1920/hero_1920_3.jpg" media="(max-width: 3840px)">
+                                <img class="swiper-img" src="./img/img_1920/hero_1920_3.jpg" alt="Слайд 3">
                             </picture>
                         </div>
                         ...
@@ -113,6 +94,55 @@
                     <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей
                         день остаются уделом проектантов</p>
                     <button class="btn hero__btn">Заказать расчёт</button>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container container-about">
+                <h2 class="about__title">О нас</h2>
+                <p class="about__descr">
+                    Также как перспективное планирование создаёт необходимость включения
+                    в производственный план целого
+                    ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности
+                    и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены
+                    отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа
+                    как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить,
+                    что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций,
+                    занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того,
+                    что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
+                </p>
+                <div class="about__cards-wrapper flex">
+                    <div class="about__big-card flex">
+                        <div class="big-card__inner flex">
+                            <p class="big-card__descr">
+                                Принимая во внимание показатели успешности, перспективное планирование способствует
+                                подготовке и реализации новых принципов
+                            </p>
+                            <button class="btn-reset btn big-card__btn">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="abaut__small-cards-wrapper">
+                        <div class="about__small-card flex">
+                            <img class="small-card__img" src="./img/img_1920/cube_1920.svg" alt="">
+                            <div class="small-card__inner flex">
+                                <h3 class="small-card__title">Консультация с широким активом</h3>
+                                <p class="small-card__descr">
+                                    А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты
+                                    для как самодостаточных, так и внешне зависимых концептуальных решений
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__small-card flex">
+                            <img class="small-card__img" src="./img/img_1920/gear_1920.svg" alt="">
+                            <div class="small-card__inner flex">
+                                <h3 class="small-card__title">В своём стремлении повысить</h3>
+                                <p class="small-card__descr">
+                                    Качество жизни, они забывают, что сплочённость команды профессионалов представляет
+                                    собой интересный эксперимент проверки прогресса профессионального сообщества
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
