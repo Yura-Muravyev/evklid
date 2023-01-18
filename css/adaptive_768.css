@@ -63,6 +63,11 @@
 
   /* HERO */
 
+  .container-hero {
+    min-height: 662px;
+    margin-bottom: 35px;
+  }
+
   .swiper-img {
     border-radius: 24px;
   }
@@ -86,15 +91,13 @@
   }
 
   .hero__btn {
-    margin-bottom: 160px;
   }
 
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 0;
+    bottom: 26px;
     left: 10px;
-    margin-bottom: 59px;
   }
 }

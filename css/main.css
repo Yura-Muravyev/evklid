@@ -267,6 +267,7 @@ textarea {
   position: relative;
   overflow: hidden;
   margin-bottom: 52px;
+  min-height: 620px;
 }
 
 .swiper {
@@ -333,7 +334,7 @@ textarea {
 
 .hero__btn {
   padding: 24px 40px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-weight: 700;
   font-size: 23px;
   line-height: 28px;
@@ -343,10 +344,6 @@ textarea {
   border-radius: 16px;
   pointer-events: all;
   cursor: pointer;
-}
-
-.footer {
-  margin-bottom: 500px;
 }
 
 /* ABOUT */
@@ -362,7 +359,7 @@ textarea {
   color: var(--dark);
 }
 .about__descr {
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   max-width: 1235px;
   font-style: normal;
   font-weight: 400;
@@ -454,4 +451,8 @@ textarea {
   font-size: 16px;
   line-height: 32px;
   color: var(--dark);
+}
+
+.footer {
+  margin-bottom: 500px;
 }
