@@ -390,6 +390,7 @@ textarea {
 
 .big-card__descr {
   max-width: 433px;
+  margin-right: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;

@@ -100,4 +100,43 @@
     bottom: 26px;
     left: 10px;
   }
+
+  /* ABOUT */
+  .about__descr {
+    margin-bottom: 54px;
+  }
+  .about__cards-wrapper {
+    flex-wrap: wrap;
+  }
+  .about__big-card {
+    margin-right: 0;
+    margin-bottom: 32px;
+    min-height: 650px;
+    border-radius: 24px;
+  }
+  .big-card__inner {
+    padding: 0 40px;
+  }
+  .big-card__descr {
+    max-width: 366px;
+    border-radius: 24px;
+  }
+  .big-card__btn {
+  }
+  .abaut__small-cards-wrapper {
+  }
+  .about__small-card {
+    padding: 0 40px;
+    min-height: 235px;
+  }
+  .small-card__img {
+    width: 114px;
+    margin-right: 16px;
+  }
+  .small-card__inner {
+  }
+  .small-card__title {
+  }
+  .small-card__descr {
+  }
 }

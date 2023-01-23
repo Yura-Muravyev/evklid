@@ -1,4 +1,4 @@
-@media (max-width: 321px) {
+@media (max-width: 500px) {
   .container {
     min-width: 290px;
     margin: 0 var(--gap_320);
@@ -6,7 +6,7 @@
 
   /* HEADER */
   .header {
-    width: 320px;
+    width: 100%;
     margin-bottom: 30px;
   }
 
@@ -66,6 +66,13 @@
   }
 
   /* HERO */
+  .container-hero {
+    margin-bottom: 60px;
+    min-height: 308px;
+  }
+
+  .swiper {
+  }
 
   .swiper-img {
     border-radius: 16px;
@@ -80,16 +87,15 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 5px;
+    bottom: 10px;
     left: 10px;
-    margin-bottom: 25px;
   }
 
   .hero__content {
     padding-top: 60px;
     padding-left: 21px;
     padding-right: 21px;
-    align-items: center;
+    padding-bottom: 0;
   }
 
   .hero__title {
@@ -113,5 +119,81 @@
     border-radius: 8px;
     font-size: 12px;
     line-height: 15px;
+  }
+
+  /* ABOUT */
+  .about__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .about__descr {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .about__cards-wrapper {
+    flex-wrap: wrap;
+  }
+  .about__big-card {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 76%;
+    min-height: 200px;
+    border-radius: 16px;
+  }
+  .big-card__inner {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    position: absolute;
+    bottom: -102%;
+    padding: 0;
+    background-color: transparent;
+  }
+  .big-card__descr {
+    margin-bottom: 10px;
+    max-width: 366px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--black);
+  }
+  .big-card__btn {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 12px 44px;
+    border-radius: 8px;
+    color: var(--orange);
+  }
+  .abaut__small-cards-wrapper {
+  }
+  .about__small-card {
+    padding: 0;
+    min-height: 235px;
+    border: none;
+  }
+
+  .about__small-card:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  .small-card__img {
+    margin: 0;
+    margin-bottom: 15px;
+    width: 64px;
+    height: 100%;
+  }
+  .small-card__inner {
+  }
+  .small-card__title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .small-card__descr {
+    font-size: 14px;
+    line-height: 28px;
   }
 }
