@@ -347,6 +347,11 @@ textarea {
 }
 
 /* ABOUT */
+
+.about {
+  margin-bottom: 100px;
+}
+
 .about__cards-wrapper {
   width: 100%;
 }
@@ -452,6 +457,97 @@ textarea {
   font-size: 16px;
   line-height: 32px;
   color: var(--dark);
+}
+
+/* HOW */
+.how {
+}
+
+.container-how {
+}
+
+.how__title {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--dark);
+}
+
+.how__tabs-nav {
+  margin-bottom: 45px;
+}
+
+.tabs-nav__item:not(:last-child) {
+  margin-right: 86px;
+}
+
+.tabs-nav__btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.tabs-nav__btn--activate {
+  color: var(--dark-orange);
+}
+
+.tab-item {
+  display: none;
+  min-height: 469px;
+}
+
+.tab-item--activate {
+  display: flex;
+}
+
+.tab-item-text {
+  flex-direction: column;
+  margin-right: 148px;
+}
+
+.tab-item-text__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--dark);
+}
+
+.tab-item-text__descr {
+  margin-bottom: auto;
+  max-width: 752px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--dark);
+}
+
+.tab-item__btn-group {
+}
+
+.tab-item__btn {
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.tab-item__btn-more {
+  margin-right: 32px;
+  background-color: var(--orange);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.tab-item__btn-contract {
+  border: 1px solid var(--dark);
+}
+
+.tab-item__img {
+  padding-top: 5px;
+  height: auto;
+  border-radius: 32px;
 }
 
 .footer {
