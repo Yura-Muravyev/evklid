@@ -122,6 +122,10 @@
   }
 
   /* ABOUT */
+  .about {
+    margin-bottom: 60px;
+  }
+
   .about__title {
     font-size: 24px;
     line-height: 29px;
@@ -195,5 +199,68 @@
   .small-card__descr {
     font-size: 14px;
     line-height: 28px;
+  }
+
+  /* HOW */
+
+  .how {
+  }
+
+  .how__title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .how__tabs-nav {
+    margin-bottom: 16px;
+  }
+
+  .tabs-nav__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .tabs-nav__btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .tab-item-text {
+    min-height: 833px;
+    margin-right: 0;
+  }
+
+  .tab-item-text__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .tab-item-text__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .tab-item__btn {
+    margin-right: 10px;
+    padding: 12px 44px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .tab-item__btn-contract {
+    padding: 12px 30px;
+    margin-right: 0;
+  }
+
+  .tab-item__img {
+    padding: 0;
+    max-height: 290px;
+    margin-bottom: 21px;
+    border-radius: 16px;
   }
 }
