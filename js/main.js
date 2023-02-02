@@ -48,11 +48,34 @@ tabsBtn.forEach((element) => {
 
 // Акардеон
 
-const acordItem = document.querySelectorAll(".accordion-item");
+const $acordionItems = document.querySelectorAll(".accordion-item");
 
-acordItem.forEach((item) => {
+$acordionItems.forEach((item) => {
   item.addEventListener("click", (e) => {
-    const test = e.currentTarget.id;
-    console.log(test);
+    const element = e.currentTarget;
+    const children = element.childNodes;
+
+    element.classList.toggle("accordion-item--open");
+
+    if (element.classList.contains("accordion-item--open")) {
+      for (let i = 0; i < children.length; i++) {
+        if (
+          children[i].nodeName != "#text" &&
+          children[i].classList.contains("accordion-item__descr")
+        ) {
+          children[i].style.height = children[i].scrollHeight + "px";
+        }
+      }
+    }
+    if (!element.classList.contains("accordion-item--open")) {
+      for (let i = 0; i < children.length; i++) {
+        if (
+          children[i].nodeName != "#text" &&
+          children[i].classList.contains("accordion-item__descr")
+        ) {
+          children[i].style.height = 0;
+        }
+      }
+    }
   });
 });

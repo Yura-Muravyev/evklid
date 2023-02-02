@@ -262,7 +262,6 @@ textarea {
 }
 
 /* hero */
-
 .container-hero {
   position: relative;
   overflow: hidden;
@@ -576,9 +575,9 @@ textarea {
 }
 
 .accordion-item {
-}
-
-.accordion-item--open {
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  transform: translateY(-3px);
 }
 
 .accordion-item__title {
@@ -586,8 +585,6 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 30px 0;
-  border-top: 1px solid var(--light-grey);
-  border-bottom: 1px solid var(--light-grey);
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -595,14 +592,18 @@ textarea {
 }
 
 .accordion-item__descr {
+  overflow: hidden;
+  height: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  display: none;
+  transition: 0.5s;
+}
+
+.accordion-item.accordion-item--open .accordion-item__descr {
 }
 
 .accordion-item__descr:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 .accordion-item__icon {
