@@ -1,0 +1,154 @@
+@media (max-width: 769px) {
+  .container {
+    max-width: 668px;
+    min-width: 320px;
+    margin: 0 var(--gap_768);
+    padding: 0;
+  }
+
+  /* HEADER */
+  .header-container {
+    min-height: 69px;
+  }
+
+  .header__burger-btn {
+    display: block;
+    z-index: 3;
+  }
+
+  .header__logo {
+    margin: 0;
+    width: 150px;
+  }
+
+  .btn-loupe {
+    margin: 0;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: -470px;
+    width: 420px;
+    height: 100vh;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .header.nav--open .nav {
+    transform: translateX(100%);
+  }
+
+  .nav__list {
+    display: block;
+    padding-top: 170px;
+    padding-left: 50px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
+  }
+
+  .nav__item {
+    padding-bottom: 60px;
+  }
+
+  .nav__link {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* HERO */
+
+  .container-hero {
+    min-height: 662px;
+    margin-bottom: 35px;
+  }
+
+  .swiper-img {
+    border-radius: 24px;
+  }
+
+  .hero__content {
+    padding-top: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__descr {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 26px;
+    left: 10px;
+  }
+
+  /* ABOUT */
+  .about__descr {
+    margin-bottom: 54px;
+  }
+
+  .about__cards-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .about__big-card {
+    margin-right: 0;
+    margin-bottom: 32px;
+    min-height: 650px;
+    border-radius: 24px;
+  }
+  .big-card__inner {
+    padding: 0 40px;
+  }
+
+  .big-card__descr {
+    max-width: 366px;
+    border-radius: 24px;
+  }
+
+  .about__small-card {
+    padding: 0 40px;
+    min-height: 235px;
+  }
+  .small-card__img {
+    width: 114px;
+    margin-right: 16px;
+  }
+
+  /* HOW */
+  .tab-item--activate {
+    flex-direction: column-reverse;
+  }
+
+  .how__tabs-nav {
+    justify-content: space-between;
+    margin-bottom: 42px;
+  }
+
+  .tab-item-text {
+    min-height: 476px;
+    margin-right: 0;
+  }
+
+  .tab-item__img {
+    max-height: 290px;
+    margin-bottom: 40px;
+    border-radius: 24px;
+  }
+}

@@ -1,0 +1,144 @@
+@media (max-width: 1025px) {
+  .container {
+    max-width: 924px;
+    min-width: 320px;
+    margin: 0 var(--gap_1024);
+  }
+
+  /* HEADER */
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .header-container {
+    min-height: 100px;
+  }
+
+  .header__burger-btn {
+    display: block;
+    z-index: 3;
+  }
+
+  .header.nav--open .burger-btn__line:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+
+  .header.nav--open .burger-btn__line:nth-child(2) {
+    background-color: transparent;
+  }
+
+  .header.nav--open .burger-btn__line:nth-child(3) {
+    transform: rotate(45deg);
+  }
+
+  .header__logo {
+    margin: 0;
+    width: 150px;
+  }
+
+  .btn-loupe {
+    margin: 0;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: -470px;
+    width: 420px;
+    height: 100vh;
+  }
+
+  .header.nav--open .nav {
+    transform: translateX(100%);
+  }
+
+  .nav__list {
+    display: block;
+    padding-top: 170px;
+    padding-left: 50px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
+  }
+
+  .nav__item {
+    padding-bottom: 60px;
+  }
+
+  .nav__link {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* HERO */
+
+  .container-hero {
+    min-height: 668px;
+    margin-bottom: 35px;
+  }
+
+  .hero__content {
+    padding-top: 160px;
+    padding-left: 77px;
+  }
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .hero__descr {
+    max-width: 657px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 26px;
+    left: 10px;
+  }
+
+  /* ABOUT */
+
+  .about {
+    margin-bottom: 80px;
+  }
+
+  .about__descr {
+    margin-bottom: 60px;
+  }
+  .about__cards-wrapper {
+    flex-wrap: wrap;
+  }
+  .about__big-card {
+    margin-right: 0;
+    margin-bottom: 32px;
+    min-height: 640px;
+  }
+
+  .about__small-card {
+    padding: 0 76px;
+  }
+
+  /* HOW */
+  .how__tabs-nav {
+    margin-bottom: 50px;
+  }
+
+  .tab-item-text {
+    min-height: 698px;
+    margin-right: 50px;
+  }
+
+  .tab-item__img {
+    padding-top: 10px;
+    border-radius: 32px;
+  }
+}

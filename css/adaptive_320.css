@@ -1,0 +1,266 @@
+@media (max-width: 500px) {
+  .container {
+    min-width: 290px;
+    margin: 0 var(--gap_320);
+  }
+
+  /* HEADER */
+  .header {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .header-container {
+    margin: 0 15px;
+    min-height: 69px;
+  }
+
+  .header__burger-btn {
+    display: block;
+    z-index: 3;
+  }
+
+  .header__logo {
+    margin: 0;
+    width: 110px;
+  }
+
+  .btn-loupe {
+    margin: 0;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: -335px;
+    width: 320px;
+    height: 100vh;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .header.nav--open .nav {
+    transform: translateX(100%);
+  }
+
+  .nav__list {
+    display: block;
+    padding-top: 78px;
+    padding-left: 15px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
+  }
+
+  .nav__item {
+    padding-bottom: 60px;
+  }
+
+  .nav__link {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* HERO */
+  .container-hero {
+    margin-bottom: 60px;
+    min-height: 308px;
+  }
+
+  .swiper {
+  }
+
+  .swiper-img {
+    border-radius: 16px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .hero__content {
+    padding-top: 60px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-bottom: 0;
+  }
+
+  .hero__title {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .hero__descr {
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .hero__btn {
+    margin: 0;
+    margin-left: 44px;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* ABOUT */
+  .about {
+    margin-bottom: 60px;
+  }
+
+  .about__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .about__descr {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .about__cards-wrapper {
+    flex-wrap: wrap;
+  }
+  .about__big-card {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 76%;
+    min-height: 200px;
+    border-radius: 16px;
+  }
+  .big-card__inner {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    position: absolute;
+    bottom: -102%;
+    padding: 0;
+    background-color: transparent;
+  }
+  .big-card__descr {
+    margin-bottom: 10px;
+    max-width: 366px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--black);
+  }
+  .big-card__btn {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 12px 44px;
+    border-radius: 8px;
+    color: var(--orange);
+  }
+  .abaut__small-cards-wrapper {
+  }
+  .about__small-card {
+    padding: 0;
+    min-height: 235px;
+    border: none;
+  }
+
+  .about__small-card:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  .small-card__img {
+    margin: 0;
+    margin-bottom: 15px;
+    width: 64px;
+    height: 100%;
+  }
+  .small-card__inner {
+  }
+  .small-card__title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .small-card__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  /* HOW */
+
+  .how {
+  }
+
+  .how__title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .how__tabs-nav {
+    margin-bottom: 16px;
+  }
+
+  .tabs-nav__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .tabs-nav__btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .tab-item-text {
+    min-height: 833px;
+    margin-right: 0;
+  }
+
+  .tab-item-text__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .tab-item-text__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .tab-item__btn {
+    margin-right: 10px;
+    padding: 12px 44px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .tab-item__btn-contract {
+    padding: 12px 30px;
+    margin-right: 0;
+  }
+
+  .tab-item__img {
+    padding: 0;
+    max-height: 290px;
+    margin-bottom: 21px;
+    border-radius: 16px;
+  }
+}

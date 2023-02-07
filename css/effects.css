@@ -1,0 +1,164 @@
+@media (min-width: 1200px) {
+  /* HEADER */
+  .nav__item {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .nav__item::before {
+    transition-property: width, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .nav__link {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition-property: outline-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .nav__item:active {
+    color: var(--dark-orange);
+  }
+
+  .nav__item:hover::before {
+    width: 100%;
+  }
+
+  .nav__item:active::before {
+    background-color: var(--dark-orange);
+  }
+
+  .nav__link:focus-visible {
+    outline-color: var(--orange);
+  }
+
+  /* Иконка поиска */
+  .btn-loupe {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition-property: outline-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-loupe__icon path {
+    transition-property: stroke;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-loupe__icon rect {
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-loupe__icon:hover path {
+    stroke: var(--orange);
+  }
+
+  .btn-loupe__icon:hover rect {
+    fill: var(--orange);
+  }
+
+  .btn-loupe__icon:active path {
+    stroke: var(--dark-orange);
+  }
+
+  .btn-loupe__icon:active rect {
+    fill: var(--dark-orange);
+  }
+
+  .btn-loupe:focus-visible {
+    outline-color: var(--orange);
+  }
+
+  .header__burger-btn {
+  }
+  .burger-btn__line {
+  }
+
+  /* СТРОКА ПОИСКА */
+
+  /* Лупа */
+
+  .searh__loupe path {
+    transition-property: stroke;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .searh__loupe rect {
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .searh__loupe:hover path {
+    stroke: var(--orange);
+  }
+
+  .searh__loupe:hover rect {
+    fill: var(--orange);
+  }
+
+  .searh__loupe:active path {
+    stroke: var(--dark-orange);
+  }
+
+  .searh__loupe:active rect {
+    fill: var(--dark-orange);
+  }
+
+  /* Крестик */
+  .closed__search rect {
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .closed__search circle {
+    transition-property: stroke;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .closed__search:hover rect {
+    fill: var(--orange);
+  }
+
+  .closed__search:hover circle {
+    stroke: var(--orange);
+  }
+
+  .closed__search:active rect {
+    fill: var(--dark);
+  }
+
+  .closed__search:active circle {
+    stroke: var(--dark);
+  }
+
+  /* HERO */
+  .hero__btn {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .hero__btn:hover {
+    background-color: var(--light-orange);
+  }
+
+  .hero__btn:focus-visible {
+    background-color: var(--light-orange);
+  }
+
+  .hero__btn:active {
+    background-color: var(--dark-orange);
+  }
+}
