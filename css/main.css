@@ -51,7 +51,7 @@
   --medium-grey: #666;
   --dark-grey: #414141;
   --dark: #000;
-  --gap_1920: 65px;
+  --gap_1920: 75px;
   --gap_1024: 50px;
   --gap_768: 50px;
   --gap_320: 15px;
@@ -128,7 +128,7 @@ textarea {
 }
 
 .btn {
-  padding: 20px 38px;
+  padding: 18px 38px;
   border-radius: 16px;
 }
 
@@ -142,7 +142,6 @@ textarea {
 
 .header-container {
   position: relative;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   min-height: 100px;
@@ -177,23 +176,23 @@ textarea {
 }
 
 .header__logo {
-  margin-right: 368px;
+  margin-right: auto;
   cursor: pointer;
 }
 
 .nav {
+  margin-right: 260px;
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   z-index: 2;
 }
 
-.nav__list {
-  flex-wrap: wrap;
-}
-
 .nav__item {
   position: relative;
+}
+
+.nav__item:not(:last-child) {
   margin-right: 85px;
 }
 
@@ -212,6 +211,7 @@ textarea {
 }
 
 .btn-loupe {
+  width: 1.5%;
   cursor: pointer;
 }
 
@@ -244,7 +244,6 @@ textarea {
 
 .header.searh--open .searh {
   right: 0;
-  /* transform: translateX(200%); */
 }
 
 .searh__input {
@@ -363,8 +362,8 @@ textarea {
   color: var(--dark);
 }
 .about__descr {
-  margin-bottom: 48px;
-  max-width: 1235px;
+  margin-bottom: 45px;
+  width: 70%;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -394,7 +393,7 @@ textarea {
 }
 
 .big-card__descr {
-  max-width: 433px;
+  width: 56%;
   margin-right: 10px;
   font-style: normal;
   font-weight: 700;
@@ -420,17 +419,24 @@ textarea {
 }
 
 .about__small-card {
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0 58px;
-  width: 100%;
-  min-height: 295px;
+  padding: 7.5% 2% 7.6% 34.2%;
+  background-size: 21.7%;
+  background-repeat: no-repeat;
+  background-position: 8.8% 50%;
   border: 1px solid var(--light-grey);
   border-radius: 32px;
 }
 
+.small-card--cube {
+  background-image: url("../img/cube_1920.svg");
+}
+
+.small-card--gear {
+  background-image: url("../img/gear_1920.svg");
+}
+
 .about__small-card:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .small-card__img {
@@ -500,16 +506,17 @@ textarea {
 
 .tab-item--activate {
   display: flex;
+  justify-content: space-between;
 }
 
-.tab-item-text {
+.tab-item__content {
   min-height: 470px;
-  width: 100%;
+  width: 40%;
   flex-direction: column;
   margin-right: 29px;
 }
 
-.tab-item-text__title {
+.tab-item__content-title {
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 24px;
@@ -517,16 +524,13 @@ textarea {
   color: var(--dark);
 }
 
-.tab-item-text__descr {
-  max-width: 752px;
+.tab-item__content-descr {
+  width: 100%;
+  margin-bottom: 19px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: var(--dark);
-}
-
-.tab-item__btn-group {
-  margin-top: auto;
 }
 
 .tab-item__btn {
@@ -535,6 +539,7 @@ textarea {
 }
 
 .tab-item__btn-more {
+  padding: 18px 38px;
   margin-right: 32px;
   background-color: var(--orange);
   font-weight: 700;
@@ -542,36 +547,30 @@ textarea {
 }
 
 .tab-item__btn-contract {
+  padding: 18px 38px;
   border: 1px solid var(--dark);
 }
 
-.tab-item__img {
+.tab-item__content-img {
   min-width: 290px;
-  width: 100%;
-  padding-top: 5px;
-  height: auto;
+  width: 49.2%;
+  padding-top: 9px;
+  /* height: auto; */
   border-radius: 32px;
   object-fit: cover;
   object-position: center;
 }
 
 /* FAQ */
+.faq {
+  margin-bottom: 120px;
+}
+
 .faq__title {
   margin-bottom: 32px;
   font-weight: 400;
   font-size: 48px;
   line-height: 59px;
-}
-
-/* FOOTER */
-.footer {
-  margin-bottom: 500px;
-}
-
-.accordion-list {
-}
-
-.list-reset {
 }
 
 .accordion-item {
@@ -607,4 +606,148 @@ textarea {
 }
 
 .accordion-item__icon {
+}
+
+/* FOOTER */
+.footer {
+  justify-content: space-between;
+  background-color: var(--dark);
+  color: var(--light-grey);
+}
+
+.footer-container {
+  padding-top: 47px;
+  padding-bottom: 29px;
+}
+
+.left-block {
+  width: 33.954%;
+}
+
+.center-block {
+  width: 45.5%;
+}
+
+.right-block {
+  width: 20%;
+  padding-top: 4.9%;
+}
+
+.left-block-wrapper {
+  flex-direction: column;
+}
+
+.footer__logo {
+  max-width: 91%;
+  margin-bottom: 19px;
+}
+
+.footer-nav {
+  margin-bottom: 90px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--light-grey);
+}
+
+.social-icon__link:not(:last-child) {
+  margin-right: 25px;
+}
+
+.form-request {
+  flex-direction: column;
+  width: 70.6%;
+}
+
+.form-request__title {
+  margin-bottom: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--light-grey);
+}
+
+.form-request__name,
+.form-request__mail {
+  padding-left: 24px;
+  margin-bottom: 25px;
+  height: 60px;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  border-radius: 16px;
+}
+
+.form-request__mail {
+  background-color: var(--dark-grey);
+  margin-bottom: 25px;
+}
+
+.form-request__message {
+  padding-top: 22px;
+  padding-left: 24px;
+  margin-bottom: 32px;
+  height: 150px;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  border-radius: 16px;
+  resize: none;
+}
+
+.form-request__btn-submit {
+  padding: 19px 52px;
+  margin-right: 36px;
+  background-color: var(--orange);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.form-request__label-approval {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--light-grey);
+  cursor: pointer;
+}
+
+.form-request__approval-check-box {
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  z-index: -1;
+  opacity: 0;
+}
+
+.approval-checkmark {
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  height: 14px;
+  width: 14px;
+  border: 1px solid var(--light-grey);
+  /* background-color: white; */
+}
+
+.form-request__approval-check-box:checked + .approval-checkmark {
+  background-image: url(../img/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-descr {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--light-grey);
 }

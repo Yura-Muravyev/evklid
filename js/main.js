@@ -48,34 +48,34 @@ tabsBtn.forEach((element) => {
 
 // Акардеон
 
-const $acordionItems = document.querySelectorAll(".accordion-item");
+// const $acordionItems = document.querySelectorAll(".accordion-item");
 
-$acordionItems.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    const element = e.currentTarget;
-    const children = element.childNodes;
+// $acordionItems.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     const element = e.currentTarget;
+//     const children = element.childNodes;
 
-    element.classList.toggle("accordion-item--open");
+//     element.classList.toggle("accordion-item--open");
 
-    if (element.classList.contains("accordion-item--open")) {
-      for (let i = 0; i < children.length; i++) {
-        if (
-          children[i].nodeName != "#text" &&
-          children[i].classList.contains("accordion-item__descr")
-        ) {
-          children[i].style.height = children[i].scrollHeight + "px";
-        }
-      }
-    }
-    if (!element.classList.contains("accordion-item--open")) {
-      for (let i = 0; i < children.length; i++) {
-        if (
-          children[i].nodeName != "#text" &&
-          children[i].classList.contains("accordion-item__descr")
-        ) {
-          children[i].style.height = 0;
-        }
-      }
-    }
-  });
-});
+//     if (element.classList.contains("accordion-item--open")) {
+//       for (let i = 0; i < children.length; i++) {
+//         if (
+//           children[i].nodeName != "#text" &&
+//           children[i].classList.contains("accordion-item__descr")
+//         ) {
+//           children[i].style.height = children[i].scrollHeight + "px";
+//         }
+//       }
+//     }
+//     if (!element.classList.contains("accordion-item--open")) {
+//       for (let i = 0; i < children.length; i++) {
+//         if (
+//           children[i].nodeName != "#text" &&
+//           children[i].classList.contains("accordion-item__descr")
+//         ) {
+//           children[i].style.height = 0;
+//         }
+//       }
+//     }
+//   });
+// });

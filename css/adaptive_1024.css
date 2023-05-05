@@ -1,8 +1,8 @@
-@media (max-width: 1025px) {
+@media (max-width: 1440px) {
   .container {
-    max-width: 924px;
+    max-width: 1440px;
     min-width: 320px;
-    margin: 0 var(--gap_1024);
+    margin: 0 var(--gap_1920);
   }
 
   /* HEADER */
@@ -44,7 +44,7 @@
   .nav {
     position: absolute;
     top: 0;
-    left: -470px;
+    left: -500px;
     width: 420px;
     height: 100vh;
   }
@@ -76,9 +76,12 @@
 
   /* HERO */
 
+  .hero {
+    margin-bottom: 34px;
+  }
+
   .container-hero {
     min-height: 668px;
-    margin-bottom: 35px;
   }
 
   .hero__content {
@@ -112,6 +115,7 @@
   }
 
   .about__descr {
+    width: 100%;
     margin-bottom: 60px;
   }
   .about__cards-wrapper {
@@ -124,7 +128,9 @@
   }
 
   .about__small-card {
-    padding: 0 76px;
+    padding: 6.9% 2% 7% 34.2%;
+    background-size: 21%;
+    background-position: 10.1% 50%;
   }
 
   /* HOW */
@@ -132,13 +138,26 @@
     margin-bottom: 50px;
   }
 
-  .tab-item-text {
-    min-height: 698px;
-    margin-right: 50px;
+  .tab-item {
   }
 
-  .tab-item__img {
+  .tab-item__content {
+    width: 46%;
+  }
+  .tab-item__content-descr {
+    margin-bottom: 29px;
+  }
+
+  .tab-item__content-img {
+    width: 47.1%;
     padding-top: 10px;
-    border-radius: 32px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .container {
+    max-width: 932px;
+    min-width: 320px;
+    margin: 0 var(--gap_1024);
   }
 }
