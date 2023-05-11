@@ -20,6 +20,12 @@
     z-index: 3;
   }
 
+  .header__logo {
+    margin: 0;
+    width: 150px;
+  }
+
+  /* кнопка бургер */
   .header.nav--open .burger-btn__line:nth-child(1) {
     transform: rotate(-45deg);
   }
@@ -32,13 +38,9 @@
     transform: rotate(45deg);
   }
 
-  .header__logo {
-    margin: 0;
-    width: 150px;
-  }
-
   .btn-loupe {
     margin: 0;
+    width: 2.5%;
   }
 
   .nav {
@@ -150,7 +152,48 @@
 
   .tab-item__content-img {
     width: 47.1%;
-    padding-top: 10px;
+    padding-top: 14px;
+  }
+
+  .faq {
+    margin-bottom: 84px;
+  }
+
+  .accordion-item__title {
+    font-size: 20px;
+  }
+
+  .left-block {
+    width: 42%;
+  }
+
+  .center-block {
+    width: 59%;
+  }
+
+  .right-block {
+    display: none;
+  }
+
+  .form-request {
+    width: 100%;
+  }
+
+  .form-request__title {
+    font-size: 48px;
+  }
+
+  .sbt-wrapper {
+    margin: 0 auto;
+  }
+
+  .form-request__btn-submit {
+    margin: 0;
+    padding: 19px 38px;
+  }
+
+  .form-request__label-approval {
+    display: none;
   }
 }
 
@@ -159,5 +202,13 @@
     max-width: 932px;
     min-width: 320px;
     margin: 0 var(--gap_1024);
+  }
+
+  .faq__title {
+    margin-bottom: 29px;
+  }
+
+  .right-block {
+    display: none;
   }
 }

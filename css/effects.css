@@ -1,5 +1,6 @@
 @media (min-width: 1200px) {
   /* HEADER */
+
   .nav__item {
     transition-property: color;
     transition-duration: 0.3s;

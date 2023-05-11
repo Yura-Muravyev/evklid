@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .container {
     min-width: 290px;
     margin: 0 var(--gap_320);
@@ -26,6 +26,7 @@
   }
 
   .btn-loupe {
+    width: 8.5%;
     margin: 0;
   }
 
@@ -71,9 +72,6 @@
     min-height: 308px;
   }
 
-  .swiper {
-  }
-
   .swiper-img {
     border-radius: 16px;
   }
@@ -99,7 +97,7 @@
   }
 
   .hero__title {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -127,6 +125,7 @@
   }
 
   .about__title {
+    margin-bottom: 20px;
     font-size: 24px;
     line-height: 29px;
   }
@@ -155,8 +154,8 @@
     background-color: transparent;
   }
   .big-card__descr {
-    margin-bottom: 10px;
-    max-width: 366px;
+    margin-bottom: 11px;
+    width: 100%;
     border-radius: 24px;
     font-weight: 400;
     font-size: 14px;
@@ -170,11 +169,15 @@
     border-radius: 8px;
     color: var(--orange);
   }
-  .abaut__small-cards-wrapper {
+
+  .about {
+    margin-bottom: 63px;
   }
   .about__small-card {
     padding: 0;
-    min-height: 235px;
+    padding-top: 24%;
+    background-size: 23%;
+    background-position: 0 1%;
     border: none;
   }
 
@@ -182,14 +185,6 @@
     margin-bottom: 23px;
   }
 
-  .small-card__img {
-    margin: 0;
-    margin-bottom: 15px;
-    width: 64px;
-    height: 100%;
-  }
-  .small-card__inner {
-  }
   .small-card__title {
     margin-bottom: 4px;
     font-weight: 500;
@@ -204,6 +199,7 @@
   /* HOW */
 
   .how {
+    margin-bottom: 58px;
   }
 
   .how__title {
@@ -232,13 +228,13 @@
     margin-right: 0;
   }
 
-  .tab-item-text__title {
+  .tab-item__content-title {
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
   }
 
-  .tab-item-text__descr {
+  .tab-item__content-descr {
     font-size: 14px;
     line-height: 28px;
   }
@@ -257,10 +253,96 @@
     margin-right: 0;
   }
 
-  .tab-item__img {
-    padding: 0;
-    max-height: 290px;
-    margin-bottom: 21px;
+  .tab-item__content-img {
     border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  .faq {
+    margin-bottom: 45px;
+  }
+
+  .faq__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .accordion-item__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .accordion-item__icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .faq__title {
+    margin-bottom: 16px;
+  }
+
+  .accordion-item__title {
+    width: 89%;
+  }
+
+  .accordion-item__icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .center-block {
+    width: 100%;
+  }
+
+  .form-request__title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .form-request {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 32px;
+    border-bottom: 1px solid var(--light-grey);
+  }
+
+  .form-request__message {
+    margin-bottom: 24px;
+  }
+
+  .form-request__btn-submit {
+    padding: 12px 29px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+
+  .left-block {
+    margin: 0 auto;
+  }
+
+  .center-block {
+    margin-bottom: 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+
+  .social-icon-wrapper {
+    justify-content: center;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon__link:not(:last-child) {
+    margin-right: 16px;
   }
 }
