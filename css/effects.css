@@ -162,4 +162,250 @@
   .hero__btn:active {
     background-color: var(--dark-orange);
   }
+
+  /* about */
+  .big-card__btn {
+    transition-property: background-color, border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .big-card__btn:hover {
+    background-color: var(--orange);
+  }
+
+  .big-card__btn:focus-visible {
+    background-color: var(--orange);
+  }
+
+  .big-card__btn:active {
+    background-color: var(--dark-orange);
+    border-color: var(--dark-orange);
+  }
+
+  /* how */
+  /* Кноппки табов */
+  .tabs-nav__btn {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition-property: outline-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .tabs-nav__btn:hover {
+    color: var(--orange);
+  }
+
+  .tabs-nav__btn:focus-visible {
+    outline-color: var(--dark-orange);
+  }
+
+  .tabs-nav__btn:active {
+    color: var(--dark-orange);
+  }
+
+  /* Кнопка ПОДРОБНЕЕ */
+  .tab-item__btn-more {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .tab-item__btn-more:hover {
+    background-color: var(--light-orange);
+  }
+
+  .tab-item__btn-more:focus-visible {
+    background-color: var(--light-orange);
+  }
+
+  .tab-item__btn-more:active {
+    background-color: var(--dark-orange);
+  }
+
+  /* Кнопка ДОГОВОР */
+  .tab-item__btn-contract {
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .tab-item__btn-contract:hover,
+  .tab-item__btn-contract:focus-visible {
+    background-color: var(--medium-grey);
+    border-color: var(--medium-grey);
+    color: var(--white);
+  }
+
+  .tab-item__btn-contract:active {
+    background-color: var(--dark);
+    border-color: var(--dark);
+    color: var(--white);
+  }
+  /* faq */
+
+  .accordion-item__btn {
+    transition-property: border-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .accordion-item__title {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .accordion-item__icon ellipse,
+  .accordion-item__icon path {
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .accordion-item__btn:hover {
+    border-color: var(--orange);
+    z-index: 1;
+  }
+
+  .accordion-item__btn:focus-visible {
+    outline-color: none;
+    border-color: var(--orange);
+    z-index: 1;
+  }
+
+  .accordion-item__btn:hover .accordion-item__title,
+  .accordion-item__btn:focus-visible .accordion-item__title {
+    color: var(--orange);
+  }
+
+  .accordion-item__btn:hover .accordion-item__icon ellipse {
+    fill: var(--orange);
+  }
+
+  .accordion-item__btn:hover .accordion-item__icon path {
+    fill: var(--white);
+  }
+
+  .accordion-item__icon {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .accordion-item__btn:active {
+    border-color: var(--light-grey);
+  }
+
+  .accordion-item__btn:active .accordion-item__title {
+    color: var(--dark);
+  }
+
+  .accordion-item__btn:active .accordion-item__icon ellipse {
+    fill: var(--light-grey);
+  }
+
+  .accordion-item__btn:active .accordion-item__icon path {
+    fill: var(--dark);
+  }
+
+  .accordion-item__btn:active .accordion-item__icon {
+    transform: rotate(45deg);
+  }
+
+  /* footer */
+  /* Меню */
+
+  .footer-nav__link {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition-property: color, outline-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .footer-nav__link:hover {
+    color: var(--orange);
+  }
+
+  .footer-nav__link:focus-visible {
+    outline-color: var(--orange);
+  }
+
+  .footer-nav__link:active {
+    color: var(--dark-orange);
+  }
+
+  /* Соц сети */
+
+  .social-icon__link {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition-property: outline-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .social-icon__link .social-icon path {
+    transition-property: fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .social-icon__link:hover .social-icon path {
+    fill: var(--orange);
+  }
+
+  .social-icon__link:focus-visible {
+    outline-color: var(--orange);
+  }
+
+  .social-icon__link:active .social-icon path {
+    color: var(--dark-orange);
+  }
+
+  /* Инпуты формы обратной связи*/
+  .form-request__name,
+  .form-request__mail,
+  .form-request__message {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .form-request__name:hover,
+  .form-request__mail:hover,
+  .form-request__message:hover {
+    background-color: var(--medium-grey);
+  }
+
+  .form-request__name:focus-visible,
+  .form-request__mail:focus-visible,
+  .form-request__message:focus-visible {
+    background-color: var(--medium-grey);
+  }
+
+  .form-request__name:active,
+  .form-request__mail:active,
+  .form-request__message:active {
+    background-color: var(--medium-grey);
+  }
+
+  /* Кнопка ОТПРАВИТЬ */
+
+  .tab-item__btn-contract {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .form-request__btn-submit:hover,
+  .form-request__btn-submit:focus-visible {
+    background-color: var(--light-orange);
+  }
+
+  .form-request__btn-submit:active {
+    background-color: var(--dark-orange);
+  }
 }
