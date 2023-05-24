@@ -1,11 +1,30 @@
 const $header = document.querySelector(".header");
-const $search = document.querySelector(".btn-loupe");
-const $closed_search = document.querySelector(".closed__search");
+const $searchBtn = document.querySelector(".btn-loupe");
+const $closed_search = document.querySelector(".closed__search-btn");
 const $header__burger_btn = document.querySelector(".header__burger-btn");
+const $menuLinks = document.querySelectorAll(".nav__link");
 
 // БУРГЕР МЕНЮ
 $header__burger_btn.addEventListener("click", () => {
   document.querySelector(".header").classList.toggle("nav--open");
+  document.body.classList.toggle("stop-scroll");
+});
+
+$menuLinks.forEach((navLink) => {
+  navLink.addEventListener("click", () => {
+    document.querySelector(".header").classList.remove("nav--open");
+    document.body.classList.remove("stop-scroll");
+  });
+});
+
+// ПОИСК
+
+$searchBtn.addEventListener("click", () => {
+  $header.classList.add("searh--open");
+});
+
+$closed_search.addEventListener("click", () => {
+  $header.classList.remove("searh--open");
 });
 
 // СВАЙПЕР HERO
@@ -47,35 +66,18 @@ tabsBtn.forEach((element) => {
 });
 
 // Акардеон
+const $acordionItems = document.querySelectorAll(".accordion-item");
 
-// const $acordionItems = document.querySelectorAll(".accordion-item");
-
-// $acordionItems.forEach((item) => {
-//   item.addEventListener("click", (e) => {
-//     const element = e.currentTarget;
-//     const children = element.childNodes;
-
-//     element.classList.toggle("accordion-item--open");
-
-//     if (element.classList.contains("accordion-item--open")) {
-//       for (let i = 0; i < children.length; i++) {
-//         if (
-//           children[i].nodeName != "#text" &&
-//           children[i].classList.contains("accordion-item__descr")
-//         ) {
-//           children[i].style.height = children[i].scrollHeight + "px";
-//         }
-//       }
-//     }
-//     if (!element.classList.contains("accordion-item--open")) {
-//       for (let i = 0; i < children.length; i++) {
-//         if (
-//           children[i].nodeName != "#text" &&
-//           children[i].classList.contains("accordion-item__descr")
-//         ) {
-//           children[i].style.height = 0;
-//         }
-//       }
-//     }
-//   });
-// });
+$acordionItems.forEach((acItem) => {
+  acItem.addEventListener("click", () => {
+    acItem.classList.toggle("accordion-item--show");
+    let children = acItem.childNodes;
+    if (acItem.classList.contains("accordion-item--show")) {
+      // если класс активный
+      children[3].style.maxHeight = children[3].scrollHeight + "px"; // открываем контент
+    } else {
+      // в противном случае
+      children[3].style.maxHeight = 0; // скрываем контент
+    }
+  });
+});

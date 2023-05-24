@@ -78,13 +78,6 @@
     outline-color: var(--orange);
   }
 
-  .header__burger-btn {
-  }
-  .burger-btn__line {
-  }
-
-  /* СТРОКА ПОИСКА */
-
   /* Лупа */
 
   .searh__loupe path {
@@ -116,31 +109,31 @@
   }
 
   /* Крестик */
-  .closed__search rect {
+  .closed__search-icon rect {
     transition-property: fill;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }
 
-  .closed__search circle {
+  .closed__search-icon circle {
     transition-property: stroke;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }
 
-  .closed__search:hover rect {
+  .closed__search-icon:hover rect {
     fill: var(--orange);
   }
 
-  .closed__search:hover circle {
+  .closed__search-icon:hover circle {
     stroke: var(--orange);
   }
 
-  .closed__search:active rect {
+  .closed__search-icon:active rect {
     fill: var(--dark);
   }
 
-  .closed__search:active circle {
+  .closed__search-icon:active circle {
     stroke: var(--dark);
   }
 
@@ -264,7 +257,7 @@
     transition-timing-function: ease-in-out;
   }
 
-  .accordion-item__btn:hover {
+  .accordion-item:hover {
     border-color: var(--orange);
     z-index: 1;
   }
@@ -294,7 +287,7 @@
     transition-timing-function: ease-in-out;
   }
 
-  .accordion-item__btn:active {
+  .accordion-item:active {
     border-color: var(--light-grey);
   }
 
@@ -310,7 +303,7 @@
     fill: var(--dark);
   }
 
-  .accordion-item__btn:active .accordion-item__icon {
+  .accordion-item.accordion-item--show .accordion-item__icon {
     transform: rotate(45deg);
   }
 

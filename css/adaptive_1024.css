@@ -49,6 +49,7 @@
     left: -500px;
     width: 420px;
     height: 100vh;
+    margin: 0;
   }
 
   .header.nav--open .nav {
@@ -58,7 +59,7 @@
   .nav__list {
     display: block;
     padding-top: 170px;
-    padding-left: 50px;
+    padding-left: 80px;
     background-color: var(--white);
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 32px 32px;
