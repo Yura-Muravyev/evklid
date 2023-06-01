@@ -58,6 +58,7 @@
 
   .nav__list {
     display: block;
+    height: 100vh;
     padding-top: 170px;
     padding-left: 80px;
     background-color: var(--white);
@@ -66,12 +67,12 @@
   }
 
   .nav__item {
-    padding-bottom: 60px;
+    width: fit-content;
+    margin-bottom: 60px;
   }
 
   .nav__link {
     display: block;
-    width: 100%;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -165,11 +166,10 @@
   }
 
   .left-block {
-    width: 42%;
   }
 
   .center-block {
-    width: 59%;
+    transform: none;
   }
 
   .right-block {
@@ -195,6 +195,10 @@
 
   .form-request__label-approval {
     display: none;
+  }
+
+  .center-block {
+    max-width: 541px;
   }
 }
 

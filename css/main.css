@@ -674,6 +674,7 @@ textarea {
 }
 
 .center-block {
+  transform: translate(45px);
 }
 
 .right-block {

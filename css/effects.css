@@ -1,6 +1,27 @@
 @media (min-width: 1200px) {
   /* HEADER */
 
+  /* Бургер меню */
+  .header__burger-btn {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition-property: outline-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .header__burger-btn:hover .burger-btn__line {
+    background-color: var(--orange);
+  }
+
+  .header__burger-btn:active .burger-btn__line {
+    background-color: var(--dark-orange);
+  }
+
+  .header__burger-btn:focus-visible {
+    outline-color: var(--orange);
+  }
+
   .nav__item {
     transition-property: color;
     transition-duration: 0.3s;
@@ -191,7 +212,7 @@
   }
 
   .tabs-nav__btn:focus-visible {
-    outline-color: var(--dark-orange);
+    outline-color: var(--orange);
   }
 
   .tabs-nav__btn:active {
