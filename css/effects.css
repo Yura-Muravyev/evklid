@@ -1,3 +1,74 @@
+/* faq */
+
+.accordion-item__btn {
+  transition-property: border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.accordion-item__title {
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.accordion-item__icon ellipse,
+.accordion-item__icon path {
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.accordion-item:hover {
+  border-color: var(--orange);
+  z-index: 1;
+}
+
+.accordion-item__btn:focus-visible {
+  outline-color: none;
+  border-color: var(--orange);
+  z-index: 1;
+}
+
+.accordion-item__btn:hover .accordion-item__title,
+.accordion-item__btn:focus-visible .accordion-item__title {
+  color: var(--orange);
+}
+
+.accordion-item__btn:hover .accordion-item__icon ellipse {
+  fill: var(--orange);
+}
+
+.accordion-item__btn:hover .accordion-item__icon path {
+  fill: var(--white);
+}
+
+.accordion-item__icon {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.accordion-item:active {
+  border-color: var(--light-grey);
+}
+
+.accordion-item__btn:active .accordion-item__title {
+  color: var(--dark);
+}
+
+.accordion-item__btn:active .accordion-item__icon ellipse {
+  fill: var(--light-grey);
+}
+
+.accordion-item__btn:active .accordion-item__icon path {
+  fill: var(--dark);
+}
+
+.accordion-item.accordion-item--show .accordion-item__icon {
+  transform: rotate(45deg);
+}
+
 @media (min-width: 1200px) {
   /* HEADER */
 
@@ -256,76 +327,6 @@
     background-color: var(--dark);
     border-color: var(--dark);
     color: var(--white);
-  }
-  /* faq */
-
-  .accordion-item__btn {
-    transition-property: border-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-  }
-
-  .accordion-item__title {
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-  }
-
-  .accordion-item__icon ellipse,
-  .accordion-item__icon path {
-    transition-property: fill;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-  }
-
-  .accordion-item:hover {
-    border-color: var(--orange);
-    z-index: 1;
-  }
-
-  .accordion-item__btn:focus-visible {
-    outline-color: none;
-    border-color: var(--orange);
-    z-index: 1;
-  }
-
-  .accordion-item__btn:hover .accordion-item__title,
-  .accordion-item__btn:focus-visible .accordion-item__title {
-    color: var(--orange);
-  }
-
-  .accordion-item__btn:hover .accordion-item__icon ellipse {
-    fill: var(--orange);
-  }
-
-  .accordion-item__btn:hover .accordion-item__icon path {
-    fill: var(--white);
-  }
-
-  .accordion-item__icon {
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-  }
-
-  .accordion-item:active {
-    border-color: var(--light-grey);
-  }
-
-  .accordion-item__btn:active .accordion-item__title {
-    color: var(--dark);
-  }
-
-  .accordion-item__btn:active .accordion-item__icon ellipse {
-    fill: var(--light-grey);
-  }
-
-  .accordion-item__btn:active .accordion-item__icon path {
-    fill: var(--dark);
-  }
-
-  .accordion-item.accordion-item--show .accordion-item__icon {
-    transform: rotate(45deg);
   }
 
   /* footer */
