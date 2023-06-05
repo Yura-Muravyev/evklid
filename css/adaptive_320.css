@@ -146,7 +146,7 @@
 
   /* ABOUT */
   .about {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 
   .about__title {
@@ -165,7 +165,7 @@
   .about__big-card {
     position: relative;
     margin-right: 0;
-    margin-bottom: 76%;
+    margin-bottom: 180px;
     min-height: 200px;
     border-radius: 16px;
   }
@@ -195,9 +195,7 @@
     color: var(--orange);
   }
 
-  .about {
-    margin-bottom: 63px;
-  }
+
   .about__small-card {
     padding: 0;
     padding-top: 24%;
@@ -346,6 +344,10 @@
     margin-bottom: 16px;
   }
 
+  .left-block-wrapper {
+    align-items: center;
+  }
+
   .left-block {
     margin: 0 auto;
   }
@@ -355,7 +357,8 @@
   }
 
   .footer__logo {
-    margin-bottom: 20px;
+    max-width: 59%;
+    margin-bottom: 17px;
   }
 
   .social-icon-wrapper {
@@ -369,5 +372,12 @@
 
   .social-icon__link:not(:last-child) {
     margin-right: 16px;
+  }
+}
+
+
+@media (max-width: 330px) {
+  .about__big-card {
+    margin-bottom: 76%;
   }
 }
