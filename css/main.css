@@ -579,6 +579,7 @@ textarea {
 
 .tab-item__btn-contract {
   padding: 18px 38px;
+  color: var(--dark);
   border: 1px solid var(--dark);
 }
 
@@ -628,6 +629,7 @@ textarea {
   font-size: 24px;
   line-height: 32px;
   text-align: left;
+  color: var(--dark);
   cursor: pointer;
 }
 
